@@ -16,21 +16,21 @@ pipeline {
         stage('Code compilation') {
            steps  {
                echo 'code compilation is starting'
-               sh 'mvn clean compile
+               sh 'mvn clean compile'
                echo code compilation is completed
 			   }
              }
         stage('Code Test') {
            steps  {
                echo 'code testing is starting'
-               sh 'mvn clean test
+               sh 'mvn clean test'
                echo code testing is completed
 			   }
              }
 		stage('Code Package') {
            steps  {
                echo 'code packaging is starting'
-               sh 'mvn clean package
+               sh 'mvn clean package'
                echo code packaging is completed
 			   }
              }
