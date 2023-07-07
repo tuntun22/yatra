@@ -27,13 +27,13 @@ pipeline {
                echo 'code testing is completed'
 			   }
              }
-		stage('code package')
+		stage('code package') {
            steps  {
                echo 'code packaging is starting'
                sh 'mvn clean package'
                echo 'code packaging is completed'
-
-               }
+                  }
+              }
 
           }
 
